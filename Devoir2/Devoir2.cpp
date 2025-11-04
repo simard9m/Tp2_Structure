@@ -40,6 +40,12 @@ int main()
     //conversion en postfix
     std::stack<std::string> pileTemp;
     post.transformeEnPostfixe(pileTemp, post.ObtenirTokensInfixe());
+    std::cout << std::endl;
+    //Evaluation
+    int valeur = post.evaluerExpression(pileTemp, post.ObtenirTokensPostfixe());
+    std::cout << "Resultat (int) = " << valeur << std::endl;
+
+    return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

@@ -189,13 +189,70 @@ public:
 		}
 
 		//Affichage
-		std::cout << "Expression postfixée : ";
+		std::cout << "Expression postfixee : ";
 		for (size_t i = 0; i < tokensPostfixe.size(); ++i) {
 			if (i > 0) std::cout << ' ';
 			std::cout << tokensPostfixe[i];
 		}
 
 		Tableau = tokensPostfixe;
+	}
+
+	int evaluerExpression(std::stack<Element>, std::vector<Element>TableauPostfixe) {
+		std::stack<long long> PileValeur;
+
+		for (size_t i = 0; i < TableauPostfixe.size(); ++i) {
+			const Element& tok = TableauPostfixe[i];
+
+			if (EstNombre(tok)) {
+				//conversion sur avec une petit parser
+				long long valeur = 0;
+				for (size_t j = 0; j < tok.size(); ++j) {
+					valeur = valeur * 10 + static_cast<long long>(tok[j] - '0');
+				}
+				PileValeur.push(valeur);
+			}
+			else if(EstOperateur(tok)){
+				if (PileValeur.size() < 2) {
+					throw std::runtime_error("Expression postfixe invalide. evaluation impossible");
+				}
+
+				long long b = PileValeur.top();
+				PileValeur.pop();
+				long long a = PileValeur.top();
+				PileValeur.pop();
+
+				long long r = 0;
+
+				if (tok == "+")r = a + b;
+				else if (tok == "-")r = a - b;
+				else if (tok == "*")r = a * b;
+				else if (tok == "/") {
+					if (b == 0) throw std::runtime_error("Division par zero.");
+					//division entiere
+					r = a / b; 
+				}
+				else if (tok == "%") {
+					if (b == 0) throw std::runtime_error("Modulo par zero.");
+					r = a % b;
+				}
+				else {
+					throw std::runtime_error("Operateur inconnu a l'evaluation");
+				}
+				PileValeur.push(r);
+			}
+			else {
+				throw std::runtime_error("Expression postfixe invalide");
+			}
+		}
+
+		if (PileValeur.size() != 1) {
+			throw std::runtime_error("Expression postfixee invalide (trop d'operandes).");
+		}
+
+		long long resultat = PileValeur.top();
+
+		return static_cast<int>(resultat);
 	}
 
 	//Accesseur poue les appels dans le main
