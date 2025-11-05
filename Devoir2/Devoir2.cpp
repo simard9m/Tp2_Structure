@@ -17,6 +17,12 @@ int main()
         return 0;
     }
 
+    //Cancel le programme si l'expression est vide find_first_not_of(" \t\r\n\f\v") retourne npos lorsqu’aucun caractère
+    if (ligne.find_first_not_of(" \t\r\n\f\v") == std::string::npos) {
+        std::cerr << "expression vide rien a postfixer.\n";
+        return 1;
+    }
+
     //Construire le vectori pour le constructeur
     std::vector<char> entree;
     entree.reserve(ligne.size());

@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\",
+  "WorkspaceRootPath": "C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|solutionrelative:Postfix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|solutionrelative:Devoir2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|solutionrelative:Devoir2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D73E6243-7831-47AC-B18C-C59E4F81B54F}|Devoir2.vcxproj|solutionrelative:Postfix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Postfix.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp",
               "RelativeDocumentMoniker": "Postfix.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Postfix.cpp",
               "RelativeToolTip": "Postfix.cpp",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAiwL8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAIsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-02T18:32:10.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Devoir2.cpp",
-              "DocumentMoniker": "C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp",
+              "DocumentMoniker": "C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp",
               "RelativeDocumentMoniker": "Devoir2.cpp",
-              "ToolTip": "C:\\Users\\\u00C9mile\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp",
+              "ToolTip": "C:\\Users\\emile.simard\\Desktop\\Tp2_Structure\\Devoir2\\Devoir2.cpp",
               "RelativeToolTip": "Devoir2.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAASwCoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-02T18:05:24.125Z",
               "EditorCaption": ""

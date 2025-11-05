@@ -5,6 +5,9 @@
 #include <cctype>
 #include <stdexcept>
 
+
+
+
 template <typename Element>
 class Postfix {
 	private:
@@ -132,9 +135,9 @@ public:
 		}
 
 		//pour double on chek on regarde si les parenthese son encore balancee
-		//if (parenthese(tokensInfixe)) {
-		//	throw std::runtime_error("Desequilibre des parenthese apres la tokenisation");
-		//}
+		if (!parenthese(tokensInfixe)) {
+			throw std::runtime_error("Desequilibre des parenthese apres la tokenisation");
+		}
 	}
 
 	//Transforme l'infize en postfixe a l<aide du principe shunting yard, s<effectue sur la tokenisation effectuee plus tot 
@@ -198,6 +201,8 @@ public:
 		Tableau = tokensPostfixe;
 	}
 
+
+	//S'occupe d'evaluer les expressions
 	int evaluerExpression(std::stack<Element>, std::vector<Element>TableauPostfixe) {
 		std::stack<long long> PileValeur;
 
